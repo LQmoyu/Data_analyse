@@ -54,6 +54,8 @@ def cul_data(path):
     #参数整定
     smoother = DecomposeSmoother(smooth_type='lowess', periods=50,
                                 smooth_fraction=0.2)
+    
+    #good 
     smoother.smooth(sm_data)
     # plot the smoothed timeseries with intervals
     # plt.figure(figsize=(18,10))
